@@ -1,0 +1,14 @@
+prefix=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg/lib
+includedir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg/include
+
+Name: libswscale
+Description: FFmpeg image rescaling library
+Version: 8.3.100
+Requires: 
+Requires.private: libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lswscale 
+Libs.private: -lm
+Cflags: -I${includedir}

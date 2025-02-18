@@ -1,0 +1,14 @@
+prefix=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg/lib
+includedir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-arm64/ffmpeg/include
+
+Name: libavdevice
+Description: FFmpeg device handling library
+Version: 61.3.100
+Requires: 
+Requires.private: libavfilter >= 10.4.100, libswscale >= 8.3.100, libavformat >= 61.7.100, libavcodec >= 61.19.100, libswresample >= 5.3.100, libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lavdevice 
+Libs.private: -framework Foundation -lm -framework AVFoundation -framework CoreVideo -framework CoreMedia -pthread
+Cflags: -I${includedir}

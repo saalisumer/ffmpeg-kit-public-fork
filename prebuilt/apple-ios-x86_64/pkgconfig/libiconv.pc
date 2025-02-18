@@ -1,0 +1,12 @@
+prefix=/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator17.5.sdk/usr
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libiconv
+Description: Character set conversion library
+Version: 
+
+Requires:
+Libs: -L${libdir} -liconv
+Cflags: -I${includedir}

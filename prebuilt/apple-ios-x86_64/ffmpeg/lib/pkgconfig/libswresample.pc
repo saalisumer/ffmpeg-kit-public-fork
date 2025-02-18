@@ -1,0 +1,14 @@
+prefix=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg/lib
+includedir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 5.3.100
+Requires: 
+Requires.private: libavutil >= 59.39.100
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

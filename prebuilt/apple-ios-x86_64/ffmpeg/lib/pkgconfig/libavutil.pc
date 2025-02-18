@@ -1,0 +1,14 @@
+prefix=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg/lib
+includedir=/Users/saalisumer/msrepos/ffmpeg-kit-public-fork/prebuilt/apple-ios-x86_64/ffmpeg/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 59.39.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo
+Cflags: -I${includedir}
